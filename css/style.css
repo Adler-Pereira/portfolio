@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #01171e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100dvh;
+}
+
+.circle{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #606cc7;
+    filter: blur(100px);
+    opacity: 0.3;
+    border-radius: 100%;
+}
+
+#circle-1{
+    transform: translate(-400px, -200px);
+}
+
+#circle-2{
+    transform: translate(-150px, 200px);
+}
+
+.column-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.column-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blur-box{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    opacity: 0.2;
+    filter: blur(10px);
+}
+
+#title-welcome{
+    position: absolute;
+    text-align: center;
+    font-size: 75px;
+    color: white;
+    text-shadow: 5px 5px 5px #011e11;
+}
+
+#svg-network{
+    width: 80%;
+    height: 100%;
+}
+
+#profile-photo {
+    height: 100%;
+    -webkit-user-drag: none;
+    clip-path: polygon(36% 16%, 100% 13%, 78% 97%, 11% 78%, 10% 51%, 0 34%, 5% 0);
+}
