@@ -105,6 +105,12 @@ body {
     clip-path: polygon(36% 16%, 100% 13%, 78% 100%, 11% 78%, 10% 51%, 0 34%, 5% 0);
 }
 
+@media (max-width: 1000px) {
+    #title-welcome{
+        font-size: 50px;
+    }
+}
+
 @media (max-width: 740px) {
     #java-sticker{
         max-width: 20vw;
@@ -112,5 +118,11 @@ body {
 
     #svg-asterisk{
         max-width: 20vw;
+    }
+}
+
+@media (max-width: 650px) {
+    #title-welcome{
+        font-size: 30px;
     }
 }
