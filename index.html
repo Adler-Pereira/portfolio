@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav>
-            <div><img src="images/face-avatar.png" alt="" style="padding-right: 60px; padding-top: 10px;-webkit-user-drag: none; transform: scaleX(-1);"></div>
+            <div><img src="images/face-avatar.png" alt="" id="avatar-nav"></div>
             <div class="column-3">
                 <a href="#sobre">Sobre mim</a></li>
                 <a href="#meus-projetos">Projetos</a></li>
@@ -18,23 +18,28 @@
                 <svg viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd;}</style></defs><path class="cls-1" d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"></path></g></svg>
             </div>
         </nav>
-        <div class="column-1 flex-space">
-            <div class="container">
-                <h1 id="name-title">Adler Lima</h1>
-                <h2 id="stack-title">Fullstack Java Developer</h2>
-                <h3 id="status-title">Estudante</h3>
-                <div id="pc-sticker">
-                    <div id="sout-code">
-                        <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("</h1>
-                            <div class="string">
-                                <h1 class="greeting pt">Olá Mundo!</h1>  
-                                <h1 class="greeting en">Hello World!</h1>
-                                <h1 class="greeting de">Hallo Welt!</h1>
-                                <h1 class="greeting es">¡Hola Mundo!</h1>
-                            </div>
-                        <h1 class="closure">");</h1>
+        <div class="column-1 flex-space mobile">
+            <div class="column-2" id="titles-pc">
+                <div class="container">
+                    <div id="titles-ctner">
+                        <div>
+                        <h1 id="name-title">Adler Lima</h1>
+                        <h2 id="stack-title">Fullstack Java Developer</h2>
+                        <h3 id="status-title">Estudante</h3></div>
                     </div>
-                    <p id="ascii-java">
+                    <div class="row flex-center" id="row-pc-mobile">
+                        <div id="pc-sticker">
+                            <div id="sout-code">
+                                <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("</h1>
+                                    <div class="string">
+                                        <h1 class="greeting pt">Olá Mundo!</h1>  
+                                        <h1 class="greeting en">Hello World!</h1>
+                                        <h1 class="greeting de">Hallo Welt!</h1>
+                                        <h1 class="greeting es">¡Hola Mundo!</h1>
+                                    </div>
+                                <h1 class="closure">");</h1>
+                            </div>
+                            <p id="ascii-java">
                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡇<br>
                         ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⠟⠀⣀⣠⠄<br>
                         ⠀⠀⠀⠀⠀⠀⢠⣶⣿⠟⠁⢠⣾⠋⠁<br>
@@ -50,49 +55,51 @@
                         ⠀⠀⠈⠉⠛⠛⠛⠛⠛⠛⠛⠛⠋⠉⠁⠀⣀⣤⡶⠋<br>
                         ⠀⠀⠀⠀⠐⠒⠀⠠⠤⠤⠤⠶⠶⠚⠛⠛⠉⠀⠀⠀
                         </span>
-                    </p>
-                    <svg id="svg-pc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" viewBox="-1.9 20.2 180.2 121.9" style="fill: rgb(0, 0, 0);">
-                        <defs>
-                            <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id8_sfqf68mu06" x1=".857" x2=".655" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="-.461" y2=".734">
-                                <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
-                                <stop offset="1" stop-opacity="0" style="stop-color: rgb(255, 255, 255);"/>
-                            </linearGradient>
-                            <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id9_sfqf68mu06" x1=".677" x2=".506" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="-1.129" y2=".871">
-                                <stop offset="0" stop-opacity=".701" style="stop-color: inherit;"/>
-                                <stop offset="1" stop-opacity="0" style="stop-color: inherit;"/>
-                            </linearGradient>
-                            <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id10_sfqf68mu06" x1=".705" x2=".734" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="-.359" y2="1.438">
-                                <stop offset="0" style="stop-color: rgb(8, 8, 8);"/>
-                                <stop offset=".4" style="stop-color: rgb(20, 20, 20);"/>
-                                <stop offset="1" style="stop-color: rgb(72, 72, 72);"/>
-                            </linearGradient>
-                            <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id11_sfqf68mu06" x1=".772" x2=".606" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="3.795" y2="-.144">
-                                <stop offset="0" style="stop-color: inherit;"/>
-                                <stop offset="1" style="stop-color: rgb(255, 255, 255);"/>
-                            </linearGradient>
-                            <radialGradient xmlns:xlink="http://www.w3.org/1999/xlink" cx=".49" cy=".506" fx=".544" fy=".192" id="__id12_sfqf68mu06" r=".46" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple">
-                                <stop offset="0" stop-opacity=".408" style="stop-color: inherit;"/>
-                                <stop offset=".648" stop-opacity=".079" style="stop-color: inherit;"/>
-                                <stop offset="1" stop-opacity="0" style="stop-color: inherit;"/>
-                            </radialGradient>
-                        </defs>
-                        <path d="m82.055 175.84a56.143 56.143 0 1 0 -112.29 0 56.143 56.143 0 1 0 112.29 0z" fill-rule="evenodd" transform="matrix(1.5872 0 0 .35798 47.927 58.014)" style="fill: url(&quot;#__id12_sfqf68mu06&quot;);"/>
-                        <path d="m82.055 175.84a56.143 56.143 0 1 0 -112.29 0 56.143 56.143 0 1 0 112.29 0z" fill-rule="evenodd" transform="matrix(1.3235 0 0 .31495 38.261 61.714)" style="fill: url(&quot;#__id12_sfqf68mu06&quot;);"/>
-                        <path d="m24.407 21.127c-6.8507 0.03664-14.983 8.3581-13.915 15.125l10.89 68.97c0.86994 5.5096 5.3126 12.777 10.89 12.705l93.775-1.21c5.1411-0.06634 10.389-5.2638 11.495-10.285l14.52-65.945c1.7695-8.0364-6.2912-20.009-14.52-19.965l-113.13 0.605z" fill-rule="evenodd" style="fill: url(&quot;#__id11_sfqf68mu06&quot;);"/>
-                        <path d="m23.802 35.647 9.68 70.18 96.8-3.025 8.4701-67.76-114.95 0.60499z" fill-rule="evenodd" stroke="url(#__id9_sfqf68mu06)" stroke-opacity=".313" stroke-width="1.147" style="fill: url(&quot;#__id10_sfqf68mu06&quot;);"/>
-                        <g id="__id13_sfqf68mu06">
-                            <path d="m23.883 20.65c-8.9697 0.03343-12.563 6.3387-11.495 12.32 5.4954-5.3938 7.6633-7.506 13.461-7.629l104.51-0.89604c11.193-0.77306 11.879 2.6529 19.057 10.001 0.32354-3.5406-4.1737-14.248-12.403-14.218l-113.13 0.42167z" fill-opacity=".208" fill-rule="evenodd" style="fill: rgb(25, 25, 25);"/>
-                        </g>
-                    </svg>
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" viewBox="-1.9 20.2 180.2 121.9" style="fill: rgb(0, 0, 0);">
+                                <defs>
+                                    <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id8_sfqf68mu06" x1=".857" x2=".655" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="-.461" y2=".734">
+                                        <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+                                        <stop offset="1" stop-opacity="0" style="stop-color: rgb(255, 255, 255);"/>
+                                    </linearGradient>
+                                    <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id9_sfqf68mu06" x1=".677" x2=".506" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="-1.129" y2=".871">
+                                        <stop offset="0" stop-opacity=".701" style="stop-color: inherit;"/>
+                                        <stop offset="1" stop-opacity="0" style="stop-color: inherit;"/>
+                                    </linearGradient>
+                                    <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id10_sfqf68mu06" x1=".705" x2=".734" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="-.359" y2="1.438">
+                                        <stop offset="0" style="stop-color: rgb(8, 8, 8);"/>
+                                        <stop offset=".4" style="stop-color: rgb(20, 20, 20);"/>
+                                        <stop offset="1" style="stop-color: rgb(72, 72, 72);"/>
+                                    </linearGradient>
+                                    <linearGradient xmlns:xlink="http://www.w3.org/1999/xlink" id="__id11_sfqf68mu06" x1=".772" x2=".606" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" y1="3.795" y2="-.144">
+                                        <stop offset="0" style="stop-color: inherit;"/>
+                                        <stop offset="1" style="stop-color: rgb(255, 255, 255);"/>
+                                    </linearGradient>
+                                    <radialGradient xmlns:xlink="http://www.w3.org/1999/xlink" cx=".49" cy=".506" fx=".544" fy=".192" id="__id12_sfqf68mu06" r=".46" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple">
+                                        <stop offset="0" stop-opacity=".408" style="stop-color: inherit;"/>
+                                        <stop offset=".648" stop-opacity=".079" style="stop-color: inherit;"/>
+                                        <stop offset="1" stop-opacity="0" style="stop-color: inherit;"/>
+                                    </radialGradient>
+                                </defs>
+                                <path d="m82.055 175.84a56.143 56.143 0 1 0 -112.29 0 56.143 56.143 0 1 0 112.29 0z" fill-rule="evenodd" transform="matrix(1.5872 0 0 .35798 47.927 58.014)" style="fill: url(&quot;#__id12_sfqf68mu06&quot;);"/>
+                                <path d="m82.055 175.84a56.143 56.143 0 1 0 -112.29 0 56.143 56.143 0 1 0 112.29 0z" fill-rule="evenodd" transform="matrix(1.3235 0 0 .31495 38.261 61.714)" style="fill: url(&quot;#__id12_sfqf68mu06&quot;);"/>
+                                <path d="m24.407 21.127c-6.8507 0.03664-14.983 8.3581-13.915 15.125l10.89 68.97c0.86994 5.5096 5.3126 12.777 10.89 12.705l93.775-1.21c5.1411-0.06634 10.389-5.2638 11.495-10.285l14.52-65.945c1.7695-8.0364-6.2912-20.009-14.52-19.965l-113.13 0.605z" fill-rule="evenodd" style="fill: url(&quot;#__id11_sfqf68mu06&quot;);"/>
+                                <path d="m23.802 35.647 9.68 70.18 96.8-3.025 8.4701-67.76-114.95 0.60499z" fill-rule="evenodd" stroke="url(#__id9_sfqf68mu06)" stroke-opacity=".313" stroke-width="1.147" style="fill: url(&quot;#__id10_sfqf68mu06&quot;);"/>
+                                <g id="__id13_sfqf68mu06">
+                                    <path d="m23.883 20.65c-8.9697 0.03343-12.563 6.3387-11.495 12.32 5.4954-5.3938 7.6633-7.506 13.461-7.629l104.51-0.89604c11.193-0.77306 11.879 2.6529 19.057 10.001 0.32354-3.5406-4.1737-14.248-12.403-14.218l-113.13 0.42167z" fill-opacity=".208" fill-rule="evenodd" style="fill: rgb(25, 25, 25);"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column-3">
-                    <div class="absolute">
-                        <img src="images/java-sticker.png" id="java-sticker">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0.0 0.0 260.4 260.4" zoomAndPan="magnify" style="fill: rgb(230, 147, 73);" original_string_length="1784" id="svg-asterisk">
-                            <g id="__id4_s2wek6s4xv"><path d="M259.85,149.65c0.38-0.38,0.59-0.89,0.59-1.42V114.5c0-0.53-0.21-1.04-0.59-1.42c-0.38-0.37-0.88-0.58-1.41-0.58 c0,0,0,0,0,0l-87.96,0.28c10.06-10.9,12.07-13.12,12.54-13.67l49.98-45.04c0.81-0.73,0.89-1.98,0.17-2.8l-22.21-25.39 c-0.72-0.82-1.97-0.92-2.8-0.21l-51.56,43.79c-0.31,0.27-0.64,0.56-0.94,0.87c-0.09,0.09-2.54,2.59-6.71,6.84l-1-75.19 c-0.01-1.09-0.91-1.97-2-1.97h-33.73c-1.09,0-1.99,0.88-2,1.97l-1.09,82.06L57.01,25.21c-0.36-0.4-0.86-0.64-1.39-0.67 c-0.53-0.04-1.06,0.16-1.45,0.52c0,0-30.7,28.08-30.89,28.26c-0.44,0.4-0.68,0.97-0.65,1.57c0.02,0.52,0.25,1.01,0.62,1.36 C24.32,57.34,50.59,85.2,76,112.14l0.88,0.93l-74.88,0.24c-1.1,0-1.99,0.9-1.99,2v32.1c0,1.1,0.89,2,1.99,2l75.78,0.24L49,178.96 c-15.31,15.6-26.04,26.52-26.14,26.63c-0.37,0.38-0.58,0.9-0.57,1.43c0.01,0.54,0.23,1.04,0.62,1.41l25.2,24.03 c2.21,2.11,3.49,3.33,4.29,4.03c0.09,0.14,0.21,0.28,0.36,0.42c0.3,0.29,0.66,0.46,1.04,0.53c0.04,0.01,0.07,0.01,0.1,0.01 c0.59,0.08,1.22-0.12,1.67-0.58c0.05-0.05,0.1-0.11,0.15-0.17c1.21-1.34,18.56-20.06,38.59-41.68l13.53-14.6l-1.04,77.99 c-0.01,0.53,0.2,1.05,0.58,1.43c0.38,0.38,0.89,0.6,1.42,0.6h40.55c0.54,0,1.05-0.21,1.42-0.6c0.38-0.38,0.58-0.9,0.58-1.43 l-0.92-69.48l56.75,48.88c0.83,0.71,2.07,0.63,2.8-0.19l22.42-25.21c0.73-0.82,0.66-2.06-0.14-2.8c0,0-60.63-55.66-63.64-58.42 c-0.16-0.19-0.59-0.67-1.1-1.25l90.93,0.29C259,150.22,259.48,150.02,259.85,149.65z" style="fill: inherit;"/></g>
-                        </svg>
-                    </div>
+                <div class="absolute">
+                    <img src="images/java-sticker.png" class="sticker">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0.0 0.0 260.4 260.4" zoomAndPan="magnify" style="fill: rgb(230, 147, 73);" original_string_length="1784" class="sticker">
+                        <g id="__id4_s2wek6s4xv"><path d="M259.85,149.65c0.38-0.38,0.59-0.89,0.59-1.42V114.5c0-0.53-0.21-1.04-0.59-1.42c-0.38-0.37-0.88-0.58-1.41-0.58 c0,0,0,0,0,0l-87.96,0.28c10.06-10.9,12.07-13.12,12.54-13.67l49.98-45.04c0.81-0.73,0.89-1.98,0.17-2.8l-22.21-25.39 c-0.72-0.82-1.97-0.92-2.8-0.21l-51.56,43.79c-0.31,0.27-0.64,0.56-0.94,0.87c-0.09,0.09-2.54,2.59-6.71,6.84l-1-75.19 c-0.01-1.09-0.91-1.97-2-1.97h-33.73c-1.09,0-1.99,0.88-2,1.97l-1.09,82.06L57.01,25.21c-0.36-0.4-0.86-0.64-1.39-0.67 c-0.53-0.04-1.06,0.16-1.45,0.52c0,0-30.7,28.08-30.89,28.26c-0.44,0.4-0.68,0.97-0.65,1.57c0.02,0.52,0.25,1.01,0.62,1.36 C24.32,57.34,50.59,85.2,76,112.14l0.88,0.93l-74.88,0.24c-1.1,0-1.99,0.9-1.99,2v32.1c0,1.1,0.89,2,1.99,2l75.78,0.24L49,178.96 c-15.31,15.6-26.04,26.52-26.14,26.63c-0.37,0.38-0.58,0.9-0.57,1.43c0.01,0.54,0.23,1.04,0.62,1.41l25.2,24.03 c2.21,2.11,3.49,3.33,4.29,4.03c0.09,0.14,0.21,0.28,0.36,0.42c0.3,0.29,0.66,0.46,1.04,0.53c0.04,0.01,0.07,0.01,0.1,0.01 c0.59,0.08,1.22-0.12,1.67-0.58c0.05-0.05,0.1-0.11,0.15-0.17c1.21-1.34,18.56-20.06,38.59-41.68l13.53-14.6l-1.04,77.99 c-0.01,0.53,0.2,1.05,0.58,1.43c0.38,0.38,0.89,0.6,1.42,0.6h40.55c0.54,0,1.05-0.21,1.42-0.6c0.38-0.38,0.58-0.9,0.58-1.43 l-0.92-69.48l56.75,48.88c0.83,0.71,2.07,0.63,2.8-0.19l22.42-25.21c0.73-0.82,0.66-2.06-0.14-2.8c0,0-60.63-55.66-63.64-58.42 c-0.16-0.19-0.59-0.67-1.1-1.25l90.93,0.29C259,150.22,259.48,150.02,259.85,149.65z" style="fill: inherit;"/></g>
+                    </svg>
+                </div>
                 <div class="box-profile">
                     <img src="images/profile-photo.jpeg" id="profile-photo">
                 </div>
