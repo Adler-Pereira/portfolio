@@ -130,7 +130,7 @@ hr{
 #avatar-nav{
     padding-right: 60px;
     padding-top: 10px;
-    -webkit-user-drag: none;
+    user-select: none;
     transform: scaleX(-1);
 }
 
@@ -234,7 +234,7 @@ hr{
 
 .sticker{
     height: 135px;
-    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .box-profile{
@@ -247,7 +247,7 @@ hr{
 
 #profile-photo{
     width: 100%;
-    -webkit-user-drag: none;
+    user-select: none;
     border-radius: 10%;
 }
 
