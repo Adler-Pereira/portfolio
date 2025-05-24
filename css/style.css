@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #f8fcfd;
-    --secundary-color: #08355a;
+    --secondary-color: #08355a;
     --tertiary-color: #136591;
 }
 
@@ -71,8 +71,44 @@ body {
     width: 25%;
 }
 
-.navbar{
+.header {
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.header img {
+    height: 30px;
+}
+
+.header-scrolled {
     position: fixed;
+    background-color: #08355acc;
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.header-scrolled #social-medias svg{
+    fill: var(--primary-color);
+}
+
+.header-scrolled .nav-container .hamburger-lines .line {
+    background: var(--primary-color);
+}
+
+.header-scrolled .navbar .menu-items{
+    background-color: #08355acc;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.navbar{
     display: none;
     z-index: 2;
 }
@@ -83,7 +119,7 @@ body {
   
 .navbar .nav-container a {
     text-decoration: none;
-    color: var(--secundary-color);
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
@@ -111,11 +147,10 @@ body {
 }
   
 .nav-container .hamburger-lines {
-    display: block;
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 17px;
+    top: 12px;
     left: 20px;
     z-index: 2;
     display: flex;
@@ -128,7 +163,7 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: var(--secundary-color);
+    background: var(--secondary-color);
 }
   
 .nav-container .hamburger-lines .line1 {
@@ -147,7 +182,9 @@ body {
   
 .navbar .menu-items {
     padding-top: 120px;
-    background-color: #f8fcfde7;
+    position: fixed;
+    background-color: #08355acc;
+    backdrop-filter: blur(5px);
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     height: 100vh;
     width: 100vw;
@@ -184,28 +221,18 @@ body {
     display: none;
 }
 
-#col-titles-pc {
-    width: auto;
+.header-scrolled:has(.nav-container input[type="checkbox"]:checked) {
+    backdrop-filter: none;
 }
 
-header {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    /* background-color: #ff9393; */
-}
-
-header img {
-    height: 30px;
+.header-scrolled:has(.nav-container input[type="checkbox"]:not(:checked)) {
+    transition-delay: 0.15s;
 }
 
 #sections-nav a {
     padding: 0px 20px 0px 20px;
     text-decoration: none;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     /*Display none temporário*/
     display: none;
 }
@@ -213,22 +240,24 @@ header img {
 #social-medias div {
     padding: 0px 20px 0px 20px;
     text-decoration: none;
-    color: var(--secundary-color);
+}
+
+#social-medias svg {
+    fill: var(--secondary-color);
 }
 
 hr {
     width: 90%;
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
 }
 
 #avatar-nav {
-    padding-top: 10px;
     user-select: none;
     transform: scaleX(-1);
 }
 
 #name-title {
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     font-size: 5em;
 }
 
@@ -247,7 +276,7 @@ hr {
 
 #status-title {
     margin-top: 10px;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     font-size: 1.5em;
     font-weight: 200;
 }
@@ -334,17 +363,18 @@ hr {
     width: 100%;
     user-select: none;
     border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .section-title {
-    color: var(--secundary-color);
+    color: var(--secondary-color);
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
-.card{
+.card {
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -562,7 +592,11 @@ hr {
         display: none;
     }
 
-    #social-medias {
-        display: none;
+    #social-medias div{
+        padding: 0 10px 0 10px;
+    }
+
+    .section-title{
+        scroll-margin-top: 60px;
     }
 }
