@@ -34,6 +34,10 @@ body {
     justify-content: center;
 }
 
+.items-center {
+    align-items: center;
+}
+
 .center-center {
     display: flex;
     align-items: center;
@@ -382,6 +386,8 @@ hr {
 .box {
     width: 300px;
     padding: 20px;
+    height: 400px;
+    color: var(--secondary-color);
     background-color: var(--primary-color);
     border-radius: 10px;
     transition: background-color 0.1s linear;
@@ -389,6 +395,7 @@ hr {
 }
 
 .box:hover {
+    color: var(--primary-color);
     background-color: var(--tertiary-color);
 }
 
@@ -397,18 +404,46 @@ hr {
 }
 
 .icon-project {
-    position: absolute;
     max-width: 60px;
     min-width: 50px;
+    position: absolute;
     transition: transform 0.1s linear;
     transform: translateY(-80%);
 }
 
 .ilustrations {
     width: 100%;
-    padding-top: 50px;
 }
 
+a:has(.title-card) {
+    text-decoration: none;
+}
+
+.title-card {
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.box .description {
+    font-size: 14px;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+    max-height: 40px; /* altura aproximada para 2 linhas */
+    opacity: 0.6;
+    transition: max-height 0.1s ease, opacity 0.1s ease;
+  }
+  
+  .box:hover .description {
+    -webkit-line-clamp: unset; /* mostra todo o texto */
+    max-height: 50px; /* valor grande o suficiente */
+    opacity: 0.8;
+    color: white;
+  }
 
 /*KEYFRAMES*/
 @keyframes icon-project {
