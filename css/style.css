@@ -459,6 +459,7 @@ a:has(.title-card) {
 #svg-details {
     filter: drop-shadow(0px 3px 2px rgb(0 0 0 / 0.4));
     fill: var(--secondary-color);
+    animation: svg-details 3s infinite linear;
 }
 
 /*KEYFRAMES*/
@@ -495,6 +496,15 @@ a:has(.title-card) {
     }
     75% {
       transform: translatey(-36px);
+    }
+}
+
+@keyframes svg-details {
+    7% {
+        transform: scale(1.2);
+    }
+    14% {
+        transform: scale(1);
     }
 }
 
