@@ -632,6 +632,15 @@ a:has(.title-card) {
         font-size: 2px;
     }
 
+    .box .description {
+        -webkit-line-clamp: unset;
+        max-height: 50px;
+    }
+    
+    .box:hover #svg-details {
+        fill: var(--primary-color);
+    }
+
     @keyframes move {
         25% {
           transform: translatey(-7px);
