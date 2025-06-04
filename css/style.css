@@ -463,6 +463,14 @@ a:has(.title-card) {
     animation: svg-details 3s infinite linear;
 }
 
+#ghost-card {
+    display: none;
+    width: 340px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+}
+
 /*KEYFRAMES*/
 @keyframes icon-project {
     100% {
@@ -514,6 +522,12 @@ a:has(.title-card) {
 @media (max-width: 1050px) {
     .stickers {
         margin-right: 33vw;
+    }
+}
+
+@media (max-width: 1019px) {
+    #ghost-card {
+        display: flex;
     }
 }
 
