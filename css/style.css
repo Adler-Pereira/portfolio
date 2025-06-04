@@ -437,19 +437,18 @@ a:has(.title-card) {
     font-size: 14px;
     text-align: justify;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
   
-    max-height: 40px; /* altura aproximada para 2 linhas */
+    max-height: 50px; /* altura aproximada para 3 linhas */
     opacity: 0.6;
-    transition: max-height 0.1s ease, opacity 0.1s ease;
+    transition: opacity 0.1s ease;
 }
   
 .box:hover .description {
     -webkit-line-clamp: unset; /* mostra todo o texto */
-    max-height: 50px; /* valor grande o suficiente */
     opacity: 0.8;
     color: white;
 }
@@ -630,11 +629,6 @@ a:has(.title-card) {
     #ascii-java {
         margin-top: 125px;
         font-size: 2px;
-    }
-
-    .box .description {
-        -webkit-line-clamp: unset;
-        max-height: 50px;
     }
     
     .box:hover #svg-details {
